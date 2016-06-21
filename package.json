@@ -1,7 +1,7 @@
 {
   "name": "geo-legacy",
   "description": "get coords of all a user's packages at all versions",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Stephen Whitmore <stephen.whitmore@gmail.com>",
   "repository": {
     "url": "git://github.com/noffle/where.git"
