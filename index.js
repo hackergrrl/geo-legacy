@@ -3,6 +3,7 @@ var ls = require('npm-list-author-packages')
 var from = require('from2')
 var through = require('through2')
 var concat = require('concat-stream')
+var parallel = require('parallel-transform')
 
 ls({'username':process.argv[2]}, function (err, list) {
   if (err) throw err
@@ -10,7 +11,7 @@ ls({'username':process.argv[2]}, function (err, list) {
   var coords = {}
 
   from.obj(list)
-    .pipe(through.obj(function (pkg, enc, next) {
+    .pipe(parallel(15, function (pkg, next) {
       var self = this
       request('http://registry.npmjs.org/' + pkg)
         .pipe(concat(function (str) {

@@ -14,6 +14,7 @@
     "from2": "^2.1.1",
     "npm-author-scrape": "^1.0.1",
     "npm-list-author-packages": "^2.0.1",
+    "parallel-transform": "^1.0.0",
     "request": "^2.72.0",
     "through2": "^2.0.1"
   },
