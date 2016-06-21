@@ -31,7 +31,7 @@ $ geo-legacy watson
 
 All coordinates are in `[ latitude, longitude ]` order.
 
-## API Usage
+## API
 
 ```js
 var legacy = require('geo-legacy')
