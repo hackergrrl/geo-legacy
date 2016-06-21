@@ -6,6 +6,9 @@
     "url": "git://github.com/noffle/where.git"
   },
   "main": "index.js",
+  "bin": {
+    "geo-legacy": "bin/cli.js"
+  },
   "scripts": {
     "test": "tape test/*.js"
   },
